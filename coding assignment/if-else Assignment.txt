@@ -1,0 +1,141 @@
+/*1)Is Nested Simple If permitted ?
+
+Yes,*/
+
+public class SimpleIf
+
+{
+	public static void main(String[] args)
+
+	{
+		int a=10;
+
+		If(a%2==0)
+
+		{
+
+			if(a>5)
+
+			{
+				System.out.println("Number is even and greater than 5);
+				if(a==10)
+
+				{
+					break;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+//===========================================================================================================================================================
+/*2)Is Nested if else permitted ?
+Yes , */
+public class IfElse {
+
+	public static void main(String[] args)
+
+	{
+		int n=24;
+        	if (n % 2 == 0){
+            		System.out.print("Even ");
+            		if (n % 6 == 0) {
+                		System.out.println("and divisible by 6");
+            		} 
+            		else {
+                		System.out.println("and not divisible by 6");
+           		}
+        	} 
+		else {
+			System.out.println("Odd ");
+		}
+	}		
+}
+//===============================================================================================================================================================
+/*3)Is Nested if else permitted ?
+Yes,*/
+package com.learning;
+
+public class IfElse
+
+{
+
+	public static void main(String[] args)
+	
+	{
+		int num=57;
+		if(num%2==0)
+		
+		{
+			System.out.println("Even");
+		}
+		
+		else
+		
+		{
+			System.out.println("Odd");
+		
+			if(num%3==0)
+			
+			{
+				System.out.println(num+" is divisible by 3");
+			}
+			
+			else
+			
+			{
+				System.out.println(num+" is not divisible by 3");
+			}
+		
+		}
+	
+	}
+
+}
+//==============================================================================================================================================================
+/* Nested while is permitted?
+Yes..*/
+
+public class WhileLoop{
+public static void main(String args[]){
+int i=1;
+    while(i<=3){
+        System.out.println("\n"+i+" "+"outer loop executed only once\n");
+    int j=1;
+        while(j<=4)
+        {
+        System.out.println(j+" "+"inner loop executed until to completion");
+            j++;        
+        }
+        i++;
+
+    }
+}
+}
+//================================================================================================================================================================
+class NestedDoWhile{
+	public static void main(String args[]){
+		int row=1,column=1;
+		int x;
+		do{
+			x=4;
+			do{
+				System.out.print("");
+				x--;
+			}while(x>=row);
+			column=1;
+			do{
+				System.out.print("*"+" ");
+				column++;
+
+			}while(column<=5);
+		System.out.println(" ");
+		row++;
+		}while (row<=5);
+	}
+
+}
